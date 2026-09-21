@@ -10,10 +10,10 @@ env:
 
 jobs:
    myexamplejob:
-      run-on : ubuntu-latest
+      run-on: ubuntu-latest
       steps:
-        - run : echo "Checkout the repo"
-        - name : Checkout repo
-          uses : actions/checkout@v4
-        - run :  printenv
-        - run : echo " this is the env ${{PROJECT_NAME}} and the course is ${{COURSE}}"
+        - run: echo "Checkout the repo"
+        - name: Checkout repo
+          uses: actions/checkout@v4
+        - run: printenv
+        - run: echo " this is the env ${{PROJECT_NAME}} and the course is ${{COURSE}}"
